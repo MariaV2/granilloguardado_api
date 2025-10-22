@@ -10,4 +10,4 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/zonas',[ZonaController::class,'obtenerZonas']); //PLURAL
-Route::get('/zonas',[ZonaController::class,'obtenerZona']); //SINGULAR
+Route::get('/zona/{idzona}',[ZonaController::class,'obtenerZona']); //SINGULAR
